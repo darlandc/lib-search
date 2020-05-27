@@ -1,0 +1,8 @@
+<form action="" [formGroup]="searchForm" (ngSubmit)="submitSearch()">
+  <input type="text" size="50" class="searchInput" formControlName="searchInput">
+  <button>Buscar</button>
+</form>
+
+<ul *ngFor="let item of result">
+  <li>{{item.name }}</li>
+</ul>
